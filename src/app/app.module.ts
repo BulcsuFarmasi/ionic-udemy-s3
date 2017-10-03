@@ -42,7 +42,7 @@ import { QuotesService } from '../services/quotes';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    QuotesService
+     QuotesService
   ]
 })
 export class AppModule {}

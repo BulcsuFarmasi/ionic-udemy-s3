@@ -1,5 +1,7 @@
+import { Injectable } from '@angular/core';
 import { Quote } from '../data/quote.interface'
 
+@Injectable()
 export class QuotesService {
     private favoriteQuotes:Quote[] = [];
 
