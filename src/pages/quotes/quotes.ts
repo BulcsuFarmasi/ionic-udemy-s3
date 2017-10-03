@@ -4,6 +4,8 @@ import { AlertController, NavParams } from 'ionic-angular';
 
 import { Quote } from '../../data/quote.interface';
 
+import { QuotesService } from '../../services/quotes';
+
 @Component({
   selector: 'page-quotes',
   templateUrl: 'quotes.html',
@@ -13,7 +15,8 @@ export class QuotesPage implements OnInit{
 
     constructor (
         private navParams:NavParams,
-        private alertController:AlertController) {}
+        private alertController:AlertController,
+        private quoteService:QuotesService) {}
 
     ngOnInit () {
         this.quoteGroup = this.navParams.data;
@@ -33,7 +36,7 @@ export class QuotesPage implements OnInit{
                 {
                     text: 'Yes, go ahead',
                     handler: () => {
-                        console.log('Ok')
+                        this.quoteService.addQuoteToFavorites(selectedQuote);
                     }
                 },
                 {
