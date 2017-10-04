@@ -1,1 +1,1 @@
-This repo is based on the 3rdg section of [Maximillian Schwarzmüller's Udemy course](https://www.udemy.com/ionic-2-the-practical-guide-to-building-ios-android-apps)
+This repo is based on the 3rd section of [Maximillian Schwarzmüller's Udemy course](https://www.udemy.com/ionic-2-the-practical-guide-to-building-ios-android-apps)
